@@ -1,3 +1,6 @@
+# AutoML-examples
+
+
 1. Create a new github repo called 'AutoML examples' 
 
 2. Select a dataset of your own choosing (or select my modified version of SPARCS - https://raw.githubusercontent.com/hantswilliams/HHA-507-2022/main/autoML/datasets/data_sparcs.csv) 
