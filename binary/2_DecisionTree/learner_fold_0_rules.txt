@@ -1,0 +1,10 @@
+if (Birth Weight <= 250.0) and (Payment Typology 1 > 4.5) and (Payment Typology 1 <= 5.5) then class: 70 or Older (proba: 66.4%) | based on 4,958 samples
+
+if (Birth Weight <= 250.0) and (Payment Typology 1 <= 4.5) and (APR MDC Description <= 22.5) then class: 50 to 69 (proba: 39.3%) | based on 3,814 samples
+
+if (Birth Weight <= 250.0) and (Payment Typology 1 > 4.5) and (Payment Typology 1 > 5.5) then class: 50 to 69 (proba: 37.68%) | based on 2,033 samples
+
+if (Birth Weight > 250.0) then class: 0 to 17 (proba: 100.0%) | based on 1,335 samples
+
+if (Birth Weight <= 250.0) and (Payment Typology 1 <= 4.5) and (APR MDC Description > 22.5) then class: 18 to 29 (proba: 49.16%) | based on 1,125 samples
+

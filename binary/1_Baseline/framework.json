@@ -1,0 +1,101 @@
+{
+    "uid": "42313447-03bd-4567-8432-8bfebad7334a",
+    "name": "1_Baseline",
+    "preprocessing": [
+        {
+            "remove_columns": [
+                "Discharge Year"
+            ],
+            "categorical_y": {
+                "0 to 17": 0,
+                "18 to 29": 1,
+                "30 to 49": 2,
+                "50 to 69": 3,
+                "70 or Older": 4
+            },
+            "ml_task": "multiclass_classification",
+            "params": {
+                "columns_preprocessing": {
+                    "Discharge Year": [
+                        "remove_column"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "categorical_to_int"
+                ],
+                "ml_task": "multiclass_classification"
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "1.0.2",
+            "algorithm_name": "Baseline Classifier",
+            "algorithm_short_name": "Baseline",
+            "uid": "ffe2c210-753e-4d07-8e46-72309a46c753",
+            "params": {
+                "model_type": "Baseline",
+                "ml_task": "multiclass_classification",
+                "n_jobs": -1,
+                "seed": 1235,
+                "num_class": 5,
+                "explain_level": 2
+            },
+            "name": "learner_fold_0"
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_steps": 1,
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "Discharge Year": [
+                    "remove_column"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude",
+                "categorical_to_int"
+            ],
+            "ml_task": "multiclass_classification"
+        },
+        "validation_strategy": {
+            "validation_type": "split",
+            "train_ratio": 0.75,
+            "shuffle": true,
+            "stratify": true,
+            "X_path": "Age_Group/X.data",
+            "y_path": "Age_Group/y.data",
+            "results_path": "Age_Group"
+        },
+        "learner": {
+            "model_type": "Baseline",
+            "ml_task": "multiclass_classification",
+            "n_jobs": -1,
+            "seed": 1235,
+            "num_class": 5,
+            "explain_level": 2
+        },
+        "automl_random_state": 1234,
+        "ml_task": "multiclass_classification",
+        "explain_level": 2,
+        "name": "1_Baseline",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original",
+        "max_time_for_learner": 360.0
+    },
+    "saved": [
+        "1_Baseline/learner_fold_0.baseline"
+    ],
+    "predictions_fname": "1_Baseline/predictions_validation.csv",
+    "metric_name": "logloss",
+    "final_loss": 1.547486509653611,
+    "train_time": 1.1585183143615723,
+    "is_stacked": false
+}
